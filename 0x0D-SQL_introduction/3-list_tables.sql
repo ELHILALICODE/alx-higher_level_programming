@@ -1,0 +1,3 @@
+-- SELECTED ALL TEBLES
+-- do not fail
+CHOW TABLES;
