@@ -1,6 +1,3 @@
--- script that creates database hbtn_0c_0
--- does not fail
-CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
 -- Creates the user user_0d_1 with all privileges.
 CREATE USER
     IF NOT EXISTS 'user_0d_1'@'localhost'
