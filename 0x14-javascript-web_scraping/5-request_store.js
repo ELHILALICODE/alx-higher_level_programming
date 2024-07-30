@@ -1,14 +1,17 @@
 #!/usr/bin/node
+// lorem ipsum
 
 const request = require('request');
 const fs = require('fs');
 
-const url = process.argv[2];
-const path = process.argv[3];
-request(url, (error, response, body) => {
-  if (error) {}
-  fs.writeFile(path, body, 'utf8', (error) => {
-    if (error) {
-    }
-  });
+request.get(process.argv[2], (error, response, body) => {
+  if (error) {
+    console.log(error);
+  } else {
+    fs.writeFile(process.argv[3], body, 'utf-8', (error) => {
+      if (error) {
+        console.log(error);
+      }
+    });
+  }
 });
